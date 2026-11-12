@@ -1,0 +1,14 @@
+name,value
+players_control,44700.0
+players_treatment,45489.0
+retention_7_control,0.19020134228187918
+retention_7_treatment,0.18200004396667327
+retention_7_diff_pp,-0.8201298315205913
+retention_7_ci_low_pp,-1.3281552418885545
+retention_7_ci_high_pp,-0.3121044211526281
+retention_7_p_value,0.001554249975614329
+mde_7_pp,0.7322661887045199
+srm_p_value,0.008607987810836262
+median_rounds_control,17.0
+median_rounds_treatment,16.0
+guardrail_p_value,0.05020880772044255
