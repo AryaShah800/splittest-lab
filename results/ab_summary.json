@@ -1,0 +1,56 @@
+{
+  "design": {
+    "n_control": 44700,
+    "n_treatment": 45489,
+    "srm_chi2": 6.9024049496058275,
+    "srm_p": 0.008607987810836262,
+    "duplicates": 0,
+    "missing": 0,
+    "zero_round_players": 3994,
+    "median_rounds": 16.0,
+    "p99_rounds": 493.0,
+    "max_rounds": 49854
+  },
+  "power": {
+    "baseline_7": 0.19020134228187918,
+    "baseline_1": 0.4481879194630872,
+    "mde_7_pp": 0.7322661887045199,
+    "mde_1_pp": 0.9278960839226046
+  },
+  "primary_retention_7": {
+    "rate_control": 0.19020134228187918,
+    "rate_treatment": 0.18200004396667327,
+    "diff_pp": -0.8201298315205913,
+    "z": -3.164358912748191,
+    "p": 0.001554249975614329,
+    "ci_analytic_pp": [
+      -1.3281552418885545,
+      -0.3121044211526281
+    ],
+    "ci_bootstrap_pp": [
+      -1.33403094648887,
+      -0.31659659293691844
+    ]
+  },
+  "secondary_retention_1": {
+    "rate_control": 0.4481879194630872,
+    "rate_treatment": 0.44228274967574577,
+    "diff_pp": -0.5905169787341458,
+    "p": 0.07440965529691913,
+    "ci_bootstrap_pp": [
+      -1.2468533472433263,
+      0.056768532874903056
+    ]
+  },
+  "guardrail_rounds": {
+    "median_control": 17.0,
+    "median_treatment": 16.0,
+    "p": 0.05020880772044255,
+    "p_trimmed": 0.044587143410053265,
+    "prob_control_larger": 0.5037632819065877,
+    "mean_control": 52.45626398210291,
+    "mean_treatment": 51.29877552814966
+  },
+  "decision": "KEEP gate_30 (gate_40 is significantly worse on 7-day retention)",
+  "segments_threshold": 0.016666666666666666
+}
