@@ -36,7 +36,7 @@ Fields in the two retention files: `version` (gate_30 / gate_40), `metric` (rete
 - **Source line:** link to the GitHub repo (add after publishing).
 
 ## What the data shows in sheets 2 and 3 (check your build against this)
-- The 7-day retention gap is largest at 50 to 99 rounds (gate_30 37.5% vs gate_40 32.9%), also visible at 20 to 29 (11.4% vs 10.0%) and 40 to 49 (22.2% vs 19.7%).
+- The 7-day retention gap is largest at 50 to 99 rounds (gate_30 37.5% vs gate_40 32.9%), also visible at 20 to 29 (11.3% vs 10.0%) and 40 to 49 (22.2% vs 19.7%).
 - At 100+ rounds the two versions are the same (about 61% and 85%), and light players (under 10 rounds) differ by well under 1 pp.
 
 ## Publish (this needs your Tableau Public account)
