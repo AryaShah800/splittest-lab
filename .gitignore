@@ -1,0 +1,7 @@
+# The Kaggle dataset is downloaded, not committed
+data/raw/*
+!data/raw/.gitkeep
+__pycache__/
+.pytest_cache/
+.venv/
+.ipynb_checkpoints/
