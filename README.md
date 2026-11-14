@@ -10,7 +10,7 @@
 Cookie Cats mobile-game A/B test from Kaggle ("Mobile Games A/B Testing - Cookie Cats"): 90,189 players, one row each, with `userid`, `version` (`gate_30` / `gate_40`), `sum_gamerounds` (first 14 days), `retention_1` and `retention_7`. The file is not committed; download it and unzip it to `data/raw/cookie_cats_unzipped/cookie_cats.csv`.
 
 ## Approach
-1. Write the experiment brief first, including the decision rule ([`brief.md`](brief.md)).
+1. Write the brief (hypotheses, primary metric, guardrail, decision rule) before running the analysis; this is a retrospective study of a public dataset, not a pre-registered trial ([`brief.md`](brief.md)).
 2. Check the design: sample ratio mismatch, duplicates, missing values, outliers.
 3. Report the minimum detectable effect before the observed effect.
 4. Test the primary metric (two-proportion z-test, bootstrap 95% CI) and the guardrail (Mann-Whitney U).
@@ -30,7 +30,7 @@ Every number is produced by `notebooks/01_ab_analysis.py` (see `results/ab_summa
 - **Placebo check:** players with fewer than 30 rounds should be unaffected by either gate, but show -0.33 pp (p = 0.049). Weak evidence that something besides the gate contributes, and consistent with the sample-ratio warning.
 
 ## Dashboard
-A Tableau Public dashboard is not built yet. The reconciled data files and a build-and-publish spec are in [`tableau/`](tableau/DASHBOARD.md).
+Not built: no Tableau dashboard exists and none is claimed. The reconciled data files and a build-and-publish spec are in [`tableau/`](tableau/DASHBOARD.md).
 
 ## Reproduce
 ```bash
@@ -42,7 +42,7 @@ python notebooks/01_ab_analysis.py     # runs the analysis and writes results/
 ## Repo structure
 ```
 splittest-lab/
-├── brief.md                      # experiment design, written before looking at results
+├── brief.md                      # hypotheses, metrics and decision rule, committed before the results
 ├── memo.md                       # one-page ship / do-not-ship decision memo
 ├── notebooks/01_ab_analysis.py   # the analysis, in the order the brief sets
 ├── src/splittest/stats.py        # tested statistics: SRM, z-test, bootstrap CI, MDE, Mann-Whitney, Bonferroni

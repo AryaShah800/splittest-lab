@@ -1,6 +1,6 @@
 # Experiment brief: moving the first gate in Cookie Cats from level 30 to level 40
 
-**Written before looking at any results.** Everything below is the plan; the results go in `memo.md` after the analysis.
+**Written before running the analysis** (the commit history shows this brief committed before any results). This is a retrospective analysis of a public dataset, so the design was not pre-registered and the assignment was not run by me. Everything below is the plan; the results go in `memo.md` after the analysis.
 Dataset: Cookie Cats mobile-game A/B test (Kaggle), one row per player with `userid`, `version` (`gate_30` or `gate_40`), `sum_gamerounds`, `retention_1`, `retention_7`.
 
 ## Question
