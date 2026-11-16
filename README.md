@@ -30,7 +30,7 @@ Every number is produced by `notebooks/01_ab_analysis.py` (see `results/ab_summa
 - **Placebo check:** players with fewer than 30 rounds should be unaffected by either gate, but show -0.33 pp (p = 0.049). Weak evidence that something besides the gate contributes, and consistent with the sample-ratio warning.
 
 ## Dashboard
-Not built: no Tableau dashboard exists and none is claimed. The reconciled data files and a build-and-publish spec are in [`tableau/`](tableau/DASHBOARD.md).
+[Open the interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/arya.shah8449/viz/SplitTestLabCookieCatsGateTest/CookieCatsgatetest). It shows 7-day retention with 95% confidence intervals and the difference by game-round bucket. The reconciled data files and dashboard specification are in [`tableau/`](tableau/DASHBOARD.md).
 
 ## Reproduce
 ```bash
