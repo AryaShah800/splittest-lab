@@ -29,6 +29,11 @@ Every number is produced by `notebooks/01_ab_analysis.py` (see `results/ab_summa
 - **Exploratory segments:** heavy players (more than 16 rounds) lose 1.09 pp (p = 0.0151, below the adjusted threshold of 0.0167); light players show no difference (-0.01 pp, p = 0.96). Rounds are measured after assignment, so this is descriptive only.
 - **Placebo check:** players with fewer than 30 rounds should be unaffected by either gate, but show -0.33 pp (p = 0.049). Weak evidence that something besides the gate contributes, and consistent with the sample-ratio warning.
 
+## Static report (findings first)
+[`docs/index.html`](docs/index.html) opens in any browser, no account (plotly.js from a pinned CDN; `--offline` for a self-contained copy). Five findings with number, action and impact, then the charts. Rebuild with `python scripts/build_report.py --png`; `tests/test_report.py` checks every card number against `results/`.
+
+![SplitTest Lab report](docs/img/report-full.png)
+
 ## Dashboard
 [Open the interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/arya.shah8449/viz/SplitTestLabCookieCatsGateTest/CookieCatsgatetest). It shows 7-day retention with 95% confidence intervals and the difference by game-round bucket. The reconciled data files and dashboard specification are in [`tableau/`](tableau/DASHBOARD.md).
 
