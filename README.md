@@ -2,6 +2,8 @@
 
 [![Tests](https://github.com/AryaShah800/splittest-lab/actions/workflows/tests.yml/badge.svg)](https://github.com/AryaShah800/splittest-lab/actions/workflows/tests.yml)
 
+**Live report: https://aryashah800.github.io/splittest-lab/** (GitHub Pages, built from `docs/`)
+
 **Business question:** does moving the first progression gate in Cookie Cats from level 30 to level 40 change 7-day player retention?
 
 **Answer:** yes, for the worse. 7-day retention fell from 19.02% to 18.20% (-0.82 pp, 95% CI -1.33 to -0.31, p = 0.0016), so the recommendation is to keep the gate at level 30. Caveats are listed below and in [`memo.md`](memo.md).
